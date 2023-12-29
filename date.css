@@ -1,0 +1,54 @@
+body {
+    background: linear-gradient(to right, #ffcccc, #ffffff); 
+    margin: 0; 
+    padding: 0;
+}
+
+.imageContainer {
+    display: block;
+    margin:  auto; 
+    text-align: center;
+}
+
+.mainContainer{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.subContainer, .buttonContainer{
+    margin: auto;
+    width: 50%;
+    border: solid;
+    border-color:green ;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttonContainer {
+    text-align: center;
+    display: flex; /* Set display to flex to align items in a row */
+    justify-content: center; /* Center the items horizontally within the flex container */
+}
+
+
+.answer{
+    display: block;
+    padding: 16px 40px;
+    border-radius: 5px;
+    border: 2px solid #ffffff; 
+    background: linear-gradient(to bottom right, #ff9999, #ffcccc); 
+    color: #ffffff; 
+    cursor: pointer;
+    margin: 10px ;
+    transition: background 0.3s ease; 
+}
+
+.answer:hover{
+    background: linear-gradient(to bottom right, #ffcccc, #ff9999);
+}
+
+
+.answer:active{
+    background: linear-gradient(to bottom right, #ff9999, #ff9999);
+}
