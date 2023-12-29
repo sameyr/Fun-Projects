@@ -20,17 +20,12 @@ body {
     margin: auto;
     width: 50%;
     padding: 10px;
+    border:solid;
     text-align: center;
 }
-
-.buttonContainer {
-    text-align: center;
-    display: flex; /* Set display to flex to align items in a row */
-    justify-content: center; /* Center the items horizontally within the flex container */
-}
-
 
 .answer{
+    position: absolute;
     display: block;
     padding: 16px 40px;
     border-radius: 5px;
@@ -38,8 +33,19 @@ body {
     background: linear-gradient(to bottom right, #ff9999, #ffcccc); 
     color: #ffffff; 
     cursor: pointer;
-    margin: 10px ;
+    margin: 10px ; 
     transition: background 0.3s ease; 
+}
+
+.fixed-position-yes{
+    left: 640px;
+    top: 389px;
+}
+
+.initial-position-no {
+    /* Set the initial position (adjust values as needed) */
+    left: 770px;
+    top: 389px;
 }
 
 .answer:hover{

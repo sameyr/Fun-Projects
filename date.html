@@ -15,16 +15,10 @@
         <div class ="subContainer">
             <h2 class="question">You wanna go on a date with me?</h2>
         </div>
-        <div class="buttonContainer">    
-            <button class = "answer" onclick="redirectToYesPage()">Yes</button>
-            <button class ="answer">No</button>
+        <div>    
+            <button class = "answer fixed-position-yes" onclick="redirectToYesPage()">Yes</button>
+            <button class ="answer initial-position-no" onmouseover="shift()" onclick="redirectToNoPage()">No</button>
         </div>
     </div>    
     </body> 
-    <script>
-        function redirectToYesPage(){
-           window.location.href='yes.html';
-      }
-  </script>
-   
 </html>
