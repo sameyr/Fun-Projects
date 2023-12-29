@@ -4,6 +4,7 @@
         <title>You wanna go on a date with me?</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/date.css">
+        <script src="date.js"></script>
     </head>
     <body>
      
@@ -15,9 +16,15 @@
             <h2 class="question">You wanna go on a date with me?</h2>
         </div>
         <div class="buttonContainer">    
-            <button class = "answer">Yes</button>
+            <button class = "answer" onclick="redirectToYesPage()">Yes</button>
             <button class ="answer">No</button>
         </div>
     </div>    
     </body> 
+    <script>
+        function redirectToYesPage(){
+           window.location.href='yes.html';
+      }
+  </script>
+   
 </html>
