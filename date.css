@@ -16,6 +16,7 @@ body {
     padding: 10px;
 }
 
+
 .subContainer, .buttonContainer{
     margin: auto;
     width: 50%;
@@ -23,28 +24,37 @@ body {
     text-align: center;
 }
 
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 .answer{
-    position: absolute;
-    display: block;
+    background: linear-gradient(to bottom right, #ff9999, #ffcccc);
+    color: white;
     padding: 16px 40px;
-    border-radius: 5px;
-    border: 2px solid #ffffff; 
-    background: linear-gradient(to bottom right, #ff9999, #ffcccc); 
-    color: #ffffff; 
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
-    margin: 10px ; 
+    border: none;
+    border-radius: 12px;
     transition: background 0.3s ease; 
 }
 
 .fixed-position-yes{
-    left: 640px;
-    top: 389px;
+    position: absolute;
+    margin-right: 150px;
 }
 
 .initial-position-no {
-    /* Set the initial position (adjust values as needed) */
-    left: 770px;
-    top: 389px;
+    position: absolute;
+    margin-left: 150px;
 }
 
 .answer:hover{
